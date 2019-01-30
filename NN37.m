@@ -26,10 +26,10 @@ for cvnodes = 1:10
     % increase the number of nodes by 5
     nd = nd + 5 
     
-    %for loop to try different training algorithms for each node value
+    %for loop to try different training algorithms for each node value(crossvalidation)
     for lam = 1:3 
         
-        %crossvalidation for the training algorithm
+        %defines trainig algorithm by calling values from the list struct
         trainFcn = list.(fns{lam}) ;  
         name = list.(fns{lam})
 
